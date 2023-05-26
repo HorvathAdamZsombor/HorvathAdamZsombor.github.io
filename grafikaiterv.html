@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Horváth Ádám-Grafikaiterv</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@500&family=Oswald:wght@500&display=swap" rel="stylesheet">
+	<script src="nyelvvalasztas.js" type="text/javascript"></script>
+</head>
+<body onload= "initlang()">
+	<header>
+		<div>
+			<button onclick="changelang('hu')"><img src="css/kepekesvideok/kepek/magyar.png" class="nyelvvalasztas"></button>
+			<button onclick="changelang('en')"><img src="css/kepekesvideok/kepek/angol.png" class="nyelvvalasztas"></button>
+		</div>
+		<h4 class="hu">Portfólió</h4>
+		<h4 class="en">Portfolio</h4>
+		<h5 class="hu">Horváth Ádám Zsombor</h5>
+		<h5 class="en">Ádám Zsombor Horváth</h5>
+		<div class="sticky hu">
+			<div class="gomb_burkolo">
+    	   		<div class="gomb"><a href="index.html">Kezdőlap</a></div>
+        		<div class="gomb"><a href="kepek.html">Fényképezés</a></div>
+        		<div class="gomb"><a href="videovagas.html">Média</a></div>
+        		<div class="gomb"><a href="">Grafikai terv</a></div>
+      		</div>
+    	</div>
+		<div class="sticky en">
+			<div class="gomb_burkolo">
+    	    	<div class="gomb"><a href="index.html">Home page</a></div>
+        		<div class="gomb"><a href="kepek.html">Photography</a></div>
+        		<div class="gomb"><a href="videovagas.html">Video editing</a></div>
+        		<div class="gomb"><a href="">Graphic plan</a></div>
+      		</div>
+    	</div>
+	</header>
+
+	<main>
+		<h2 class="hu">Tervezési rajzok</h2>
+		<h2 class="en">Drawn graphic plans</h2>
+		<img src="css/kepekesvideok/kepek/terv/1.png" class="tervkep">
+		<br>
+		<img src="css/kepekesvideok/kepek/terv/2.png" class="tervkep">
+		<br>
+		<img src="css/kepekesvideok/kepek/terv/3.png" class="tervkep">
+		<br>
+		
+		<p class="en">Since I made this page to show the progress and changes to my portfolio for my classes, I decided to not translate it to english. You can still see the initial plans and the websites I used, but I will only go indepth with the documentacion of my progress in hungarian.</p>
+
+		<h2 class="hu">Változtatások</h2>
+		<p class="hu">
+		Végülis a szövegre nem raktam kontúrt (mivel így is elég nagy kontraszt van a háttérszín és a szöveg színe között).
+		<br>
+		<br>
+		Kezdőlapon a képek és a szöveg elhelyezése (nem tudtam eleget írni ahoz, hogy az eredeti elrendezéssel jól nézzen ki + így telefonon is jobban olvasható).	
+		<br>
+		<br>
+		Eredetileg az editelésnél 3 videót akartam betenni (a videó lerenderelése után rájöttem, hogy látható az autó rendszámtáblája és így nem akartam feltenni + eleve nagy méretű fájlokat tartalmaz a portfólióm és legalább ezzel tudtam csökkenteni a méretet).
+		<br>
+		<br>
+		A rajzon nem sikerült pontosan eltalálnom az elképzelt színvilágot (először Coolors-ben megterveztem és utána próbáltam beszínezni a rajzot).
+		<br>
+		<br>
+		A navigációs sávnak végülis nem adtam keretet, hanem a gombokat kissé elválasztottam és adtam nekik egy lekerekítést.
+		<br>
+		</p>
+
+		<h2 class="hu">Nehézségek</h2>
+		<p class="hu">
+		A navigációs sáv fixálása (főleg a képeknél volt először problémám, mivel még nem írtam a CSS-embe z-index-et, és így a képek a görgetésnél eredetileg kitakarták a navigációs sávot).
+		<br>
+		<br>
+		Fotók méretezése és elrendezése (a középső sor bepozícionálása nehezen ment)(több módszerrel is próbálkoztam, de végülis a táblázatnál maradtam).
+		<br>
+		<br>
+		A képeknél a hover-nél először  egymást rosszul takarták ki, mivel a képre írtam és nem a táblázat cellájára.
+		<br>
+		<br>
+		A videókon először nem működött az autoplay néhány böngészőben, de megtaláltam erre a megoldást a W3Schools-on (bele kellett írnom azt, hogy muted).
+		<br>
+		<br>
+		A lábléc mindig csak a legalján legyen az oldalnak (kisebb tartalmú oldalaknál kicsinyítésnél ne kezdődjön rögtön a tartalom alatt, hanem az oldal legalján minimális helyet foglaljon el).	
+		<br>
+		</p>
+
+		<h2 class="hu">Átalakítások "Webes megjelenítési technikák"-ra</h2>
+		<p class="hu"
+		>Az "Informatika terméktervezőknek (BMEGEMIBTIN)" című tantárgy keretein belül már kellett portfóliót készítenünk. Nem láttam értelmét egy teljesen új weboldal élkészítésének és mivel jó kiindulási alapnak találtam ezt a korábbi projektet, ezért ezt fejlesztettem és frissítettem.
+		<br>
+		<br>
+		Első lépésként csináltam a fejlécre egy nyelvválasztási opciót. Így nem csak magyarul, hanem angolul is olvasható. Ez a beállítás az aloldalakon lévő lépegetésnél is megmarad, amihez JavaScript-et használtam
+		<br>
+		<br>
+		A fényképezésnél található IRL fotók nagyon nagy felbontásúak voltak, ami az internetes betöltését nagyon lelassította. Ezt csak a feltöltés után vettem észre, mivel a számítógép saját tárhelyéről megnyitva nem volt látható ez a hiba. Ezeknek a felbontását csökkentettem, ezzel jobban optimalizálva a portfóliót.
+		<br>
+		<br>
+		A h2-es headingnek attam egy kicsit sötétebb színű háttért, ezzel jobban tagolva az oldalakat. A lenti Coolors-os linket ez alapján frissítettem.
+		<br>
+		<br>
+		Az oldal alján található dátumot frissítettem.
+		<br>
+		<br>
+		A menü 500 pixel alatt átváltozik 2x2es felosztásba, a könnyebb kezelés érdekében.
+		<br>
+		<br>
+		A fényképezésről szóló fülön a táblázat elrendezése megváltozik 500 pixel alatt.
+		<br>
+		<br>
+		A tagolást átírtam header-re, main-re és footer-re, mivel eddig különböző class-os div-eket használtam. 
+		<br>
+		<br>
+		Az elérhetőségeim alá csináltam egy Formspree-s email írási lehetőséget, aminek a magassága a szöveggel együtt nő.
+		<br>
+		</p>
+		
+		<h2 class="hu">Felhasznált weboldalak</h2>
+		<h2 class="en">Websites I used</h2>
+		<br>
+		<a href="https://www.youtube.com/" target="YouTube">YouTube</a>
+		<br>
+		<a href="https://www.w3schools.com/" target="W3Schools">W3Schools</a>
+		<br>
+		<a href="https://stackoverflow.com/" target="Stack Overflow">Stack Overflow</a>
+		<br>
+		<a href="https://coolors.co/2b0000-5a0300-c5bebe-bbadad" target="Coolors">Coolors</a>
+		<br>
+		<br>
+		<br>
+
+	</main>
+
+	<footer>
+		<h3 class="hu">Elérhetőségeim</h3>
+		<h3 class="en">Contacts</h3>
+		<a href="https://www.facebook.com/profile.php?id=100008470380916" target="Facebook">Facebook</a>
+		<br>
+		<a href="https://www.instagram.com/sugarkopo/" target="Instagram">Instagram</a>
+		<br>
+		<br>
+		<h3 class="hu">Küldj egy emailt</h3>
+		<h3 class="en">Send me an email</h3>
+		<form
+  		action="https://formspree.io/f/xjvddyed"
+  		method="POST"
+		>
+  		<label>
+    	  	<p class="hu form">Az email címed</p>
+   			<p class="en form">Your email</p>
+    	
+    	<input type="email" name="email">
+  		</label>
+  		<br>
+  		<label>
+   			<p class="hu form">Az üzeneted</p>
+   			<p class="en form">Your message</p>
+    	
+    	<textarea name="message" id="myTextarea"></textarea>
+  		</label>
+  		<br>
+  		<br>
+  		<button type="submit" class="form hu">Küldés</button>
+		<button type="submit" class="form en">Send</button>
+		</form>
+		<br>
+		<br>
+		<br>
+		<div class="hu">2023 - Horváth Ádám Zsombor</div>
+		<div class="en">2023 - Ádám Zsombor Horváth </div>
+	</footer>
+</body>
+</html>

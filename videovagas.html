@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Horváth Ádám-Média</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@500&family=Oswald:wght@500&display=swap" rel="stylesheet">
+	<script src="nyelvvalasztas.js" type="text/javascript"></script>
+</head>
+<body onload= "initlang()">
+		<header>
+		<div>
+			<button onclick="changelang('hu')"><img src="css/kepekesvideok/kepek/magyar.png" class="nyelvvalasztas"></button>
+			<button onclick="changelang('en')"><img src="css/kepekesvideok/kepek/angol.png" class="nyelvvalasztas"></button>
+		</div>
+		<h4 class="hu">Portfólió</h4>
+		<h4 class="en">Portfolio</h4>
+		<h5 class="hu">Horváth Ádám Zsombor</h5>
+		<h5 class="en">Ádám Zsombor Horváth</h5>
+		<div class="sticky hu">
+			<div class="gomb_burkolo">
+    	   		<div class="gomb"><a href="index.html">Kezdőlap</a></div>
+        		<div class="gomb"><a href="kepek.html">Fényképezés</a></div>
+        		<div class="gomb"><a href="">Média</a></div>
+        		<div class="gomb"><a href="grafikaiterv.html">Grafikai terv</a></div>
+      		</div>
+    	</div>
+		<div class="sticky en">
+			<div class="gomb_burkolo">
+    	    	<div class="gomb"><a href="index.html">Home page</a></div>
+        		<div class="gomb"><a href="kepek.html">Photography</a></div>
+        		<div class="gomb"><a href="">Video editing</a></div>
+        		<div class="gomb"><a href="grafikaiterv.html">Graphic plan</a></div>
+      		</div>
+    	</div>
+	</header>
+
+	<main>
+		<br>
+		<p class="hu">
+			Gimnáziumban két évig médiára jártam, ami alatt megszerettem ezt a területet is. Videóvágó szoftverként hosszas keresés után a DaVinci Resolve 16-ot választottam. Azóta szabadidőmben is szoktam videókat vágni saját projektekként. Vágtam már bankett videót, OKTV projektet, autós bemutató filmet és a baráti körömnek mémeket is. A fényképezésről szóló fülön belül az editelésnél a videókat és az egyetemen az első informatika házit (amit a paragrafus alatt meg lehet tekinteni) is ezzel a programmal vágtam meg.
+		</p>
+		<p class="en">
+			In high school I had film and media subjects for two years, during which I grew to love this field as well. After a long search for a good and free editing softver I chose to use DaVinci Resolve 16. Since than I sometimes edit in my free time. So far I have edited a banquet video, an OKTV project, multiple car related videos and memes for my friend group. I also edited the videos on the Photography page and the first IT homework (which you can watch under this paragraph) with the previously mentioned softver.
+		</p>
+		<div class="container">
+			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/J1NRmPwFw90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</main>
+
+	<footer>
+		<h3 class="hu">Elérhetőségeim</h3>
+		<h3 class="en">Contacts</h3>
+		<a href="https://www.facebook.com/profile.php?id=100008470380916" target="Facebook">Facebook</a>
+		<br>
+		<a href="https://www.instagram.com/sugarkopo/" target="Instagram">Instagram</a>
+		<br>
+		<br>
+		<h3 class="hu">Küldj egy emailt</h3>
+		<h3 class="en">Send me an email</h3>
+		<form
+  		action="https://formspree.io/f/xjvddyed"
+  		method="POST"
+		>
+  		<label>
+    	  	<p class="hu form">Az email címed</p>
+   			<p class="en form">Your email</p>
+    	
+    	<input type="email" name="email">
+  		</label>
+  		<br>
+  		<label>
+   			<p class="hu form">Az üzeneted</p>
+   			<p class="en form">Your message</p>
+    	
+    	<textarea name="message" id="myTextarea"></textarea>
+  		</label>
+  		<br>
+  		<br>
+  		<button type="submit" class="form hu">Küldés</button>
+		<button type="submit" class="form en">Send</button>
+		</form>
+		<br>
+		<br>
+		<br>
+		<div class="hu">2023 - Horváth Ádám Zsombor</div>
+		<div class="en">2023 - Ádám Zsombor Horváth </div>
+	<footer>
+</body>
+</html>

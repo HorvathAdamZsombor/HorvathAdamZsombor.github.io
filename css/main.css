@@ -1,0 +1,278 @@
+header{
+    background-color: #2B0000;
+    color: #C5BEBE;
+    padding: 1px; 
+}
+
+header h5{
+    font-family: 'Montagu Slab', serif;
+    font-size: 1.8em;
+    margin: 5px 0px 10px 0px;;
+    letter-spacing: 2px;
+}
+
+main{ 
+  min-height: 100%;
+}
+
+main a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    font-family: 'Montagu Slab', serif;
+}
+
+footer{
+    position: sticky;
+    top: 100%;
+    background-color: #2B0000;
+    color: #C5BEBE;
+    padding: 10px 0px 10px 0px;
+    font-family: 'Oswald', sans-serif;
+}
+
+footer a{
+    text-decoration: none;
+    color: #C5BEBE;
+    font-size: 1.1em;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0px;
+    background-color: #C5BEBE;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.gomb{
+    display: inline-block;
+    background-color: #5A0300;
+    width: 24%;
+    border-radius: 10px;
+    float: left;
+    margin: 5px 0px 5px 0px;
+}
+
+.gomb:hover{background-color: black}
+
+.gomb a{
+    text-decoration: none;
+    display: block;
+    color: #C5BEBE;
+    padding: 15px 0px 15px 0px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+
+}
+
+.gomb_burkolo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+table{
+    padding: 10px 0px;
+    width: 80%; 
+}
+
+.pics{    
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 0px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.landspic{         
+    vertical-align: inherit; 
+    padding: clamp(1%, 1%, 5px);
+    position: relative;    
+}
+
+.portpic{           
+    padding: clamp(1%, 1%, 5px); 
+    position: relative;    
+}
+
+.picitem{
+    width: 100%;
+    style: object-fit: fill; 
+    border-radius: 5px;
+
+      
+}
+
+td:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.1); 
+  z-index: 1;
+}
+
+td{
+    transition: transform .2s;
+}
+
+div.vid video{
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+
+video.allovideo{
+    height: clamp(10%, 80%, 600px);
+    max-width: clamp(10%, 80%, 500px);
+}
+
+video.fekvovideo{
+    width: clamp(70%, 80%, 1000px);
+    max-height: clamp(10%, 80%, 500px);
+}
+
+*{
+    text-align: center;
+}
+
+p{
+    font-family: 'Montagu Slab', serif;
+    font-size: 1.1em;
+    margin: 25px 15%;
+}
+
+h2{
+    font-style: bold;
+    font-family: 'Oswald', sans-serif;
+    margin: 5px;
+    font-size: 1.6em;
+    background-color: #BBADAD;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h3{
+    font-size: 1.2em;
+    margin: 0px;
+}
+
+h4{
+    font-size: 1.4em;
+    margin: 5px 0px 5px 0px;
+    font-family: 'Montagu Slab', serif;
+    letter-spacing: 2px;
+}
+
+img.rolam{
+    min-width: 200px;
+    width: 20vw;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px #504444;
+}
+
+.container{
+    display: inline-block;
+    width: 60vw;
+    min-width: 360px;
+    height: 34vw;
+    min-height: 202px;
+    margin: 25px 0px 50px 0px;
+}
+
+.tervkep{
+    display: inline-block;
+    min-width: 300px;
+    width: 40%;
+    max-width: 500px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #504444;
+    margin: 20px;
+}
+
+img.nyelvvalasztas{
+    min-width: 50px;
+    width:20vw;
+    max-width: 100px;
+    margin: 3vh 10px 1vh 10px ;
+    border-radius: 5px;
+    transition: transform .2s;
+}
+
+img.nyelvvalasztas:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.1); 
+  z-index: 1;
+}
+
+button{
+    background-color: #2B0000;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.en{
+    display: none;
+}
+
+.form{
+    margin: 0px;
+    text-decoration: none;
+    color: #C5BEBE;
+    font-size: 1.1em;
+    font-family: 'Oswald', sans-serif;
+}
+
+button.form{
+    background-color: #5A0300;
+    border-radius: 10px;
+    padding: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+textarea{
+    width: 50vw;
+    min-width: 180px;
+    margin: 10px;
+    height: auto;
+    line-height: 1.5;
+}
+
+input{
+    margin: 10px;
+    min-width: 180px;
+    width: 25vw;
+}
+
+@media screen and (max-width: 500px) {
+    div.gomb{
+        flex-basis: 48%;
+    }
+    .landspic{
+        display: block;
+    }
+    .portpic{
+        display: inline-flex;
+        width: 48%;
+    }
+    .tervkep{
+        width: 80%;
+        min-width: auto;
+    }
+    .container{
+        width: 80vw;
+        min-width: auto;
+        height: 45vw;
+        min-height: auto;
+    }
+}
